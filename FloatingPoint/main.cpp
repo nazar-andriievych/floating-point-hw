@@ -1,12 +1,12 @@
 #include <bit>
 #include <iostream>
 
-enum FpClassify {
-    FP_ZERO,
-    FP_NORMAL,
-    FP_SUBNORMAL,
-    FP_INFINITE,
-    FP_NAN
+enum Classify {
+    ZERO,
+    NORMAL,
+    SUBNORMAL,
+    INFINITE,
+    NaN
 };
 
 // Task1
@@ -220,42 +220,42 @@ bool issigned(double x) {
     return sign == 1;
 }
 
-FpClassify fpclassify(float x) {
+Classify classify(float x) {
     uint32_t bits = to_bits(x);
     uint32_t exponent = get_exponent(bits);
     uint32_t mantissa = get_mantissa(bits);
 
     if (exponent == 0xFF) {
-        return (mantissa == 0) ? FpClassify::FP_INFINITE : FpClassify::FP_NAN;
+        return (mantissa == 0) ? Classify::INFINITE : Classify::NaN;
     }
     if (exponent == 0) {
-        return (mantissa == 0) ? FpClassify::FP_ZERO : FpClassify::FP_SUBNORMAL;
+        return (mantissa == 0) ? Classify::ZERO : Classify::SUBNORMAL;
     }
-    return (mantissa == 0) ? FpClassify::FP_NORMAL : FpClassify::FP_NORMAL;
+    return (mantissa == 0) ? Classify::NORMAL : Classify::NORMAL;
 }
 
-FpClassify fpclassify(double x) {
+Classify classify(double x) {
     uint64_t bits = to_bits(x);
     uint64_t exponent = get_exponent(bits);
     uint64_t mantissa = get_mantissa(bits);
 
     if (exponent == 0x7FF) {
-        return (mantissa == 0) ? FpClassify::FP_INFINITE : FpClassify::FP_NAN;
+        return (mantissa == 0) ? Classify::INFINITE : Classify::NaN;
     }
     if (exponent == 0) {
-        return (mantissa == 0) ? FpClassify::FP_ZERO : FpClassify::FP_SUBNORMAL;
+        return (mantissa == 0) ? Classify::ZERO : Classify::SUBNORMAL;
     }
-    return FpClassify::FP_NORMAL;
+    return Classify::NORMAL;
 }
 
 // Task3
-float abs(float x) {
+float absolute(float x) {
     uint32_t bits = to_bits(x);
 
     return to_float((bits << 1) >> 1);
 }
 
-double abs(double x) {
+double absolute(double x) {
     uint64_t bits = to_bits(x);
 
     return to_double((bits << 1) >> 1);
@@ -359,4 +359,9 @@ double clamp(double x, double low, double high) {
     if (x_ordered < low_ordered) return low;
     if (x_ordered > high_ordered) return high;
     return x;
+}
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
 }
