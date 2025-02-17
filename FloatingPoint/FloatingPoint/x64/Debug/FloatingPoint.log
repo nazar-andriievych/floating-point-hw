@@ -1,0 +1,42 @@
+﻿  main.cpp
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(5,5): error C2059: syntax error: 'constant'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(10,1): error C2143: syntax error: missing ';' before '}'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(10,1): error C2059: syntax error: '}'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(225,12): error C2556: 'FpClassify fpclassify(float)': overloaded function differs only by return type from 'int fpclassify(float) noexcept'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(294,31):
+      see declaration of 'fpclassify'
+  
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(225,12): error C2371: 'fpclassify': redefinition; different basic types
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(294,31):
+      see declaration of 'fpclassify'
+  
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(231,46): error C2589: 'constant': illegal token on right side of '::'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(231,34): error C2062: type 'unknown-type' unexpected
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(231,72): error C2589: 'constant': illegal token on right side of '::'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(234,46): error C2589: 'constant': illegal token on right side of '::'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(234,34): error C2062: type 'unknown-type' unexpected
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(234,68): error C2589: '(': illegal token on right side of '::'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(234,68): error C2059: syntax error: ')'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(236,42): error C2589: '(': illegal token on right side of '::'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(236,30): error C2062: type 'unknown-type' unexpected
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(236,42): error C2059: syntax error: ')'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(236,66): error C2589: '(': illegal token on right side of '::'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(236,66): error C2059: syntax error: ')'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(239,12): error C2556: 'FpClassify fpclassify(double)': overloaded function differs only by return type from 'int fpclassify(double) noexcept'
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(299,31):
+      see declaration of 'fpclassify'
+  
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(239,12): error C2371: 'fpclassify': redefinition; different basic types
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(299,31):
+      see declaration of 'fpclassify'
+  
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(245,46): error C2589: 'constant': illegal token on right side of '::'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(245,34): error C2062: type 'unknown-type' unexpected
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(245,72): error C2589: 'constant': illegal token on right side of '::'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(248,46): error C2589: 'constant': illegal token on right side of '::'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(248,34): error C2062: type 'unknown-type' unexpected
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(248,68): error C2589: '(': illegal token on right side of '::'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(248,68): error C2059: syntax error: ')'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(250,24): error C2589: '(': illegal token on right side of '::'
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(250,12): error C2062: type 'unknown-type' unexpected
+D:\University\Selected_Math_Topics_for_Game_Development\floating-point-hw\FloatingPoint\main.cpp(250,24): error C2059: syntax error: ')'
