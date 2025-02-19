@@ -9,7 +9,7 @@ enum Classify {
     NaN
 };
 
-// Task1
+// Task 1
 uint32_t to_bits(float const value){
     return std::bit_cast<uint32_t>(value);
 }
@@ -51,7 +51,7 @@ uint64_t get_mantissa(uint64_t const value) {
     return value & 0xFFFFFFFFFFFFF;
 }
 
-// Task2
+// Task 2
 bool isfinite(float x) {
     uint32_t bits = to_bits(x);
     uint32_t exponent = get_exponent(bits);
@@ -248,7 +248,7 @@ Classify classify(double x) {
     return Classify::NORMAL;
 }
 
-// Task3
+// Task 3
 float absolute(float x) {
     uint32_t bits = to_bits(x);
 
@@ -361,7 +361,64 @@ double clamp(double x, double low, double high) {
     return x;
 }
 
+// Task 4
+bool isequal(float x, float y) {
+    return x == y;
+}
+
+bool isequal(double x, double y) {
+    return x == y;
+}
+
+bool isnearlyequal(float x, float y, float epsilon) {
+    return absolute(x - y) <= epsilon;
+}
+
+bool isnearlyequal(double x, double y, double epsilon) {
+    return absolute(x - y) <= epsilon;
+}
+
+bool less(float x, float y) {
+    return x < y;
+}
+
+bool less(double x, double y) {
+    return x < y;
+}
+
+bool nearlyless(float x, float y, float epsilon) {
+    return (y - x) > epsilon;
+}
+
+bool nearlyless(double x, double y, double epsilon) {
+    return (y - x) > epsilon;
+}
+
+bool greater(float x, float y) {
+    return x > y;
+}
+
+bool greater(double x, double y) {
+    return x > y;
+}
+
+bool nearlygreater(float x, float y, float epsilon) {
+    return (x - y) > epsilon;
+}
+
+bool nearlygreater(double x, double y, double epsilon) {
+    return (x - y) > epsilon;
+}
+
+// Cheaks for Task 6
 int main() {
     std::cout << "Hello, World!" << std::endl;
+    uint32_t num1 = 0b10011010100110010001100100111111;
+    uint32_t num2 = 0b10010011001110011111011101000010;
+    uint32_t num3 = 0b11001010100111000101111011000011;
+
+    std::cout << to_float(num1) << std::endl;
+    std::cout << to_float(num2) << std::endl;
+    std::cout << to_float(num3) << std::endl;
     return 0;
 }
